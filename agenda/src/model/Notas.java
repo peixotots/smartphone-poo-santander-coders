@@ -3,10 +3,17 @@ package model;
 public class Notas {
     public String titulo;
     private String descricao;
+    private String senha;
 
     public Notas(String titulo, String descricao) {
         this.titulo = titulo;
         this.descricao = descricao;
+    }
+
+    public Notas(String titulo, String descricao, String senha) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.senha = senha;
     }
 
     @Override
@@ -28,5 +35,9 @@ public class Notas {
 
     public String getDescricao() {
         return descricao;
+    }
+
+    public String getSenha() {
+        return senha;
     }
 }

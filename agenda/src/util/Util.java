@@ -74,7 +74,7 @@ public class Util {
             if (resposta.length() > 12) {
                 System.out.println("O título não pode ter mais de 12 caracteres. Tente novamente.");
             } else if (resposta.isEmpty()) {
-                System.out.println("O título não pode ser vazio. Tente novamente.");
+                System.out.println("O título não pode ser deixado em branco. Digite um título e tente novamente.");
             } else if (tituloExiste(resposta, blocoDeNotasService)) {
                 System.out.println("Esse título já existe. Tente um título diferente.");
             } else {
@@ -99,6 +99,21 @@ public class Util {
 
             if (resposta.length() > 40) {
                 System.out.println("A descrição não pode ter mais de 40 caracteres. Tente novamente.");
+            } else {
+                return resposta;
+            }
+        }
+    }
+
+    public static String validarSenha(Scanner scanner, String pergunta) {
+        while (true) {
+            System.out.println(pergunta);
+            String resposta = scanner.nextLine();
+
+            if (resposta.length() > 6) {
+                System.out.println("A senha não pode ter mais de 6 caracteres.");
+            } else if (resposta.isEmpty()) {
+                System.out.println("A senha não pode estar vazia. Por favor, digite uma senha e tente novamente.");
             } else {
                 return resposta;
             }

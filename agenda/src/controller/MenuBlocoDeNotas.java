@@ -10,7 +10,7 @@ public class MenuBlocoDeNotas extends Menu {
 
     @Override
     public void selecionaOpcao() {
-        String menu = Menu.geraMenuComOpcoes("Bloco de Notas", List.of("Adicionar Nota", "Ver Notas", "Excluir Nota", "Sair"));
+        String menu = Menu.geraMenuComOpcoes("Bloco de Notas", List.of("Adicionar Nota", "Ver Notas", "Adicionar Nota Privada", "Ver Notas Privadas", "Excluir Nota", "Excluir Nota Privada", "Sair"));
         int opcaoSelecionada;
 
         do {
@@ -20,26 +20,50 @@ public class MenuBlocoDeNotas extends Menu {
             switch (opcaoSelecionada) {
                 case 1:
                     try {
-                        this.blocoDeNotas.CriarNota();
+                        this.blocoDeNotas.criarNota();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
                     break;
+
                 case 2:
                     try {
-                        this.blocoDeNotas.MostrarNotas();
+                        this.blocoDeNotas.mostrarNotas();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
                     break;
                 case 3:
                     try {
-                        this.blocoDeNotas.ExcluirNota();
+                        this.blocoDeNotas.criarNotaPrivada();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
                     break;
+
                 case 4:
+                    try {
+                        this.blocoDeNotas.mostrarNotasPrivadas();
+                    } catch (Exception e) {
+                        Util.erro(e.getMessage());
+                    }
+                    break;
+
+                case 5:
+                    try {
+                        this.blocoDeNotas.excluirNota();
+                    } catch (Exception e) {
+                        Util.erro(e.getMessage());
+                    }
+                    break;
+                case 6:
+                    try {
+                        this.blocoDeNotas.excluirNotaPrivada();
+                    } catch (Exception e) {
+                        Util.erro(e.getMessage());
+                    }
+                    break;
+                case 7:
                     Util.erro("Saindo do bloco de notas...");
                     break;
 
