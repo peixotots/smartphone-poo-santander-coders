@@ -1,6 +1,7 @@
 package controller;
 
 import util.Util;
+import view.MenuDelivery;
 
 import java.util.List;
 
@@ -33,7 +34,8 @@ public class MenuPrincipal extends Menu {
                     break;
 
                 case 5:
-                    // chamar o menu do delivery
+                    MenuDelivery menuDelivery = new MenuDelivery();
+                    menuDelivery.selecionaOpcao();
                     break;
 
                 case 6:
@@ -48,6 +50,5 @@ public class MenuPrincipal extends Menu {
         } while (opcaoSelecionada != 6);
 
     }
-
 
 }

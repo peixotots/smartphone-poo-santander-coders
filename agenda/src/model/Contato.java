@@ -1,5 +1,8 @@
 package model;
 
+
+import static java.lang.StringTemplate.STR;
+
 public class Contato {
 
     private String nome;
