@@ -1,5 +1,9 @@
 package util;
 
+import model.Notas;
+import service.agenda_contatos.BlocoDeNotasService;
+import view.BlocoDeNotas;
+
 import java.util.Scanner;
 
 public class Util {
@@ -58,6 +62,45 @@ public class Util {
                 return resposta;
             } else {
                 System.err.println("Digite um email válido");
+            }
+        }
+    }
+
+    public static String validarTitulo(Scanner scanner, String pergunta, BlocoDeNotasService blocoDeNotasService) {
+        while (true) {
+            System.out.println(pergunta);
+            String resposta = scanner.nextLine();
+
+            if (resposta.length() > 12) {
+                System.out.println("O título não pode ter mais de 12 caracteres. Tente novamente.");
+            } else if (resposta.isEmpty()) {
+                System.out.println("O título não pode ser vazio. Tente novamente.");
+            } else if (tituloExiste(resposta, blocoDeNotasService)) {
+                System.out.println("Esse título já existe. Tente um título diferente.");
+            } else {
+                return resposta;
+            }
+        }
+    }
+
+    private static boolean tituloExiste(String titulo, BlocoDeNotasService blocoDeNotasService) {
+        for (Notas nota : blocoDeNotasService.getNotas()) {
+            if (nota.getTitulo().equalsIgnoreCase(titulo)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static String validarDescricao(Scanner scanner, String pergunta) {
+        while (true) {
+            System.out.println(pergunta);
+            String resposta = scanner.nextLine();
+
+            if (resposta.length() > 40) {
+                System.out.println("A descrição não pode ter mais de 40 caracteres. Tente novamente.");
+            } else {
+                return resposta;
             }
         }
     }

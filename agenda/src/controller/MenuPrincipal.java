@@ -21,7 +21,8 @@ public class MenuPrincipal extends Menu {
                     break;
 
                 case 2:
-                    // chamar o menu do bloco de notas
+                    MenuBlocoDeNotas menuBlocoDeNotas = new MenuBlocoDeNotas();
+                    menuBlocoDeNotas.selecionaOpcao();
                     break;
 
                 case 3:
