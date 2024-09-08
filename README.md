@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Ada" style="border-radius: 50%; width: 50px;" src="FotosIntegrantes/Ada.png">
+  <img alt="Ada" style="border-radius: 50%; width: 50px;" src="FotosReadme/Ada.png">
   <h1 style="font-size: 20px;"><b>SMARTPHONE</b></h1>
 </div>
 
@@ -13,9 +13,7 @@ Projeto desenvolvido pelo grupo 5 da turma 1173 | Santander Coders 2024 para fin
 
 ## Objetivo do Projeto:
 + Implementar os princípios da Orientação a Objetos no projeto do módulo de Lógica de Programação, visando organizar o código de forma mais estruturada, promovendo reutilização, manutenção e escalabilidade. 
-Serão utilizados conceitos como classes, objetos, herança, encapsulamento e polimorfismo. 
-
-<img alt="" src="FotosIntegrantes/Agenda.png">
+Serão utilizados conceitos como classes, objetos, herança, encapsulamento e polimorfismo.
 
 # Requisitos
 Funcionais
@@ -41,27 +39,27 @@ pelo menos um método da classe filha e adicionando pelo menos mais um atributo
 <table align="center">
   <tr>
     <td align="center">
-      <img style="border-radius: 5%;" src="FotosIntegrantes/LauraFoto.jpeg" height="90px" width="100px;" alt=""/><br />
+      <img style="border-radius: 5%;" src="FotosReadme/LauraFoto.jpeg" height="90px" width="100px;" alt=""/><br />
       <sub><b>Ana Laura Marques Rodrigues</b></sub><br />
       <a href="https://github.com/lauluah" target="_blank">GitHub</a>
     </td>
     <td align="center">
-      <img style="border-radius: 5%;" src="FotosIntegrantes/Arthur.jpeg"  height="90px" width="100px;" alt=""/><br />
+      <img style="border-radius: 5%;" src="FotosReadme/Arthur.jpeg"  height="90px" width="100px;" alt=""/><br />
       <sub><b>Arthur Gabriel De Menezes Viana</b></sub><br />
       <a href="https://github.com/arthurgmv" target="_blank">GitHub</a>
     </td>
     <td align="center">
-      <img style="border-radius: 5%;" src="FotosIntegrantes/Lucas.jpeg" height="90px" width="100px;" alt=""/><br />
+      <img style="border-radius: 5%;" src="FotosReadme/Lucas.jpeg" height="90px" width="100px;" alt=""/><br />
       <sub><b>Lucas Kaique Rocha Nascimento</b></sub><br />
       <a href="https://github.com/LucasKaique131" target="_blank">GitHub</a>
     </td>
     <td align="center">
-      <img style="border-radius: 5%;" src="FotosIntegrantes/Mariana.jpeg"  height="90px" width="100px;" alt=""/><br />
+      <img style="border-radius: 5%;" src="FotosReadme/Mariana.jpeg"  height="90px" width="100px;" alt=""/><br />
       <sub><b>Mariana Lainara Silva</b></sub><br />
       <a href="https://github.com/la1ni" target="_blank">GitHub</a>
     </td>
     <td align="center">
-      <img style="border-radius: 5%;" src="FotosIntegrantes/Taina.jpeg"  height="90px" width="100px;" alt=""/><br />
+      <img style="border-radius: 5%;" src="FotosReadme/Taina.jpeg"  height="90px" width="100px;" alt=""/><br />
       <sub><b>Tainá Souza Peixoto</b></sub><br />
       <a href="https://github.com/peixotots" target="_blank">GitHub</a>
     </td>
