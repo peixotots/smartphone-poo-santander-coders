@@ -1,6 +1,6 @@
 package menu;
 import model.Evento;
-import service.agenda_contatos.AgendaEventosService;
+import service.agenda_eventos.AgendaEventosService;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
