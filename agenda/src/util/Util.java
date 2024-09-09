@@ -1,8 +1,7 @@
 package util;
 
 import model.Notas;
-import service.agenda_contatos.BlocoDeNotasService;
-import view.BlocoDeNotas;
+import service.bloco_notas.BlocoDeNotasService;
 
 import java.util.Scanner;
 

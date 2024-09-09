@@ -2,7 +2,7 @@ package view;
 
 import exception.SenhaInvalidaException;
 import model.Notas;
-import service.agenda_contatos.BlocoDeNotasService;
+import service.bloco_notas.BlocoDeNotasService;
 import util.Util;
 
 import java.util.Scanner;
