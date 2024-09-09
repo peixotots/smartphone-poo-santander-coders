@@ -1,21 +1,15 @@
 <div align="center">
-  <h1>Ada Tech - Santander Coders 2024.1 | Trilha de Back-End em Java</h1>
+  <img alt="Ada" style="border-radius: 50%; width: 50px;" src="FotosReadme/Ada.png">
+  <h1 style="font-size: 20px;"><b>SMARTPHONE</b></h1>
 </div>
-<div align="center">
 
-  <h1 style="font-size: 18px;"><b>Projeto: SMARTPHONE</b></h1>
-</div>
+<h1 align="center">
+  <img alt="Santander Coders" src="https://ada-strapi-production.s3.sa-east-1.amazonaws.com/Thumb_Meta_20_f25502065b.png" width="500" height="300">
+</h1>
 
 <div align="center">
 <b>Módulo 2: Programação Orientada a Objetos I</b><br>Projeto desenvolvido pelo grupo 5 da turma 1173 do programa <b>Santander Coders</b> 2024.1 em parceria com a <b>Ada Tech</b>
 </div>
-
-<h1 align="center">
-  <div style="display: flex; justify-content: center; align-items: center;">
-    <img alt="Santander Coders" src="https://ada-strapi-production.s3.sa-east-1.amazonaws.com/Thumb_Meta_20_f25502065b.png" width="250" height="150">
-    <img alt="Ada" src="https://ada-site-frontend.s3.sa-east-1.amazonaws.com/home/Thumb-Ada.png" width="250" height="150">
-  </div>
-</h1>
 
 ## Objetivo do Projeto:
 Este projeto é uma evolução do trabalho desenvolvido no módulo de Lógica de Programação (módulo 1). No projeto deste primeiro módulo, foi criado um sistema de agenda de contatos que permitia ao usuário adicionar, remover, buscar e listar contatos.
