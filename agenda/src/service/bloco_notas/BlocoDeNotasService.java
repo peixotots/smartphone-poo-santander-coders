@@ -1,4 +1,4 @@
-package service.agenda_contatos;
+package service.bloco_notas;
 
 import exception.NotaNaoEncontradaException;
 import exception.SenhaInvalidaException;
