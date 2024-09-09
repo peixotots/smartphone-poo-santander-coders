@@ -11,12 +11,12 @@ import java.util.InputMismatchException;
 public class MenuEventos extends Menu {
 
     private AgendaEventosService agenda;
-    private DateTimeFormatter formatter;
+    private DateTimeFormatter formatarAno;
 
     public MenuEventos() {
         super();
         agenda = new AgendaEventosService();
-        formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        formatarAno = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     }
 
     public void selecionaOpcao() {
@@ -77,9 +77,9 @@ public class MenuEventos extends Menu {
         boolean dataValida = false;
         while (!dataValida) {
             System.out.print("Digite a data do evento (dd/MM/yyyy): ");
-            String dataStr = entrada.nextLine();
+            String dataEntrada = entrada.nextLine();
             try {
-                data = LocalDate.parse(dataStr, formatter);
+                data = LocalDate.parse(dataEntrada, formatarAno);
                 dataValida = true;
             } catch (DateTimeParseException e) {
                 System.out.println("Data inválida. Por favor, tente novamente.");

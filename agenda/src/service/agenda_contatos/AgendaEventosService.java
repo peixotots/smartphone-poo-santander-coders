@@ -8,13 +8,13 @@ import java.util.Locale;
 
 public class AgendaEventosService {
     private List<Evento> eventos;
-    private DateTimeFormatter formatter;
-    private DateTimeFormatter formatterDiaSemana;
+    private DateTimeFormatter formatarAno;
+    private DateTimeFormatter formatarDiaSemana;
 
     public AgendaEventosService() {
         eventos = new ArrayList<>();
-        formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        formatterDiaSemana = DateTimeFormatter.ofPattern("EEEE", new Locale("pt", "BR"));
+        formatarAno = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        formatarDiaSemana = DateTimeFormatter.ofPattern("EEEE", new Locale("pt", "BR"));
     }
 
     public void adicionarEvento(Evento evento) {
@@ -33,8 +33,8 @@ public class AgendaEventosService {
 
             System.out.println("Eventos na agenda:");
             for (Evento evento : eventos) {
-                String dataFormatada = evento.getData().format(formatter);
-                String diaDaSemana = evento.getData().format(formatterDiaSemana);
+                String dataFormatada = evento.getData().format(formatarAno);
+                String diaDaSemana = evento.getData().format(formatarDiaSemana);
                 System.out.println(evento.getNome() + " - " + dataFormatada + " (" + diaDaSemana + ")");
             }
         }
