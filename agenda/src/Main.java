@@ -1,5 +1,5 @@
-import controller.MenuBlocoDeNotas;
-import controller.MenuPrincipal;
+import menu.MenuBlocoDeNotas;
+import menu.MenuPrincipal;
 
 public class Main {
     public static void main(String[] args) throws Exception {

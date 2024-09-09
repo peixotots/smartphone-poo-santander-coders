@@ -2,7 +2,7 @@
 
 package service.delivery;
 
-import controller.Menu;
+import menu.Menu;
 import model.ItemService;
 import util.Util;
 

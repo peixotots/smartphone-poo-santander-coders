@@ -1,16 +1,20 @@
-package controller;
+package menu;
+
 
 import util.Util;
-import view.BlocoDeNotas;
+import view.Agenda;
 
 import java.util.List;
 
-public class MenuBlocoDeNotas extends Menu {
-    private final BlocoDeNotas blocoDeNotas = new BlocoDeNotas();
+
+public class MenuContatos extends Menu {
+
+    private final Agenda agenda = new Agenda();
 
     @Override
     public void selecionaOpcao() {
-        String menu = Menu.geraMenuComOpcoes("Bloco de Notas", List.of("Adicionar Nota", "Ver Notas", "Adicionar Nota Privada", "Ver Notas Privadas", "Excluir Nota", "Excluir Nota Privada", "Sair"));
+
+        String menu = Menu.geraMenuComOpcoes("Agenda Contatos", List.of("Adicionar Contato", "Detalhar Contato", "Editar Contato", "Excluir Contato", "Exibir lista completa", "Sair"));
         int opcaoSelecionada;
 
         do {
@@ -20,7 +24,7 @@ public class MenuBlocoDeNotas extends Menu {
             switch (opcaoSelecionada) {
                 case 1:
                     try {
-                        this.blocoDeNotas.criarNota();
+                        this.agenda.criarContato();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
@@ -28,14 +32,15 @@ public class MenuBlocoDeNotas extends Menu {
 
                 case 2:
                     try {
-                        this.blocoDeNotas.mostrarNotas();
+                        this.agenda.detalharContato();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
                     break;
+
                 case 3:
                     try {
-                        this.blocoDeNotas.criarNotaPrivada();
+                        this.agenda.editarContato();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
@@ -43,7 +48,7 @@ public class MenuBlocoDeNotas extends Menu {
 
                 case 4:
                     try {
-                        this.blocoDeNotas.mostrarNotasPrivadas();
+                        this.agenda.removerContato();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
@@ -51,20 +56,14 @@ public class MenuBlocoDeNotas extends Menu {
 
                 case 5:
                     try {
-                        this.blocoDeNotas.excluirNota();
+                        this.agenda.exibeListaDeContatos();
                     } catch (Exception e) {
                         Util.erro(e.getMessage());
                     }
                     break;
+
                 case 6:
-                    try {
-                        this.blocoDeNotas.excluirNotaPrivada();
-                    } catch (Exception e) {
-                        Util.erro(e.getMessage());
-                    }
-                    break;
-                case 7:
-                    Util.erro("Saindo do bloco de notas...");
+                    Util.erro("Saindo da agenda...");
                     break;
 
                 default:
@@ -72,6 +71,6 @@ public class MenuBlocoDeNotas extends Menu {
                     break;
             }
 
-        } while (opcaoSelecionada != 7);
+        } while (opcaoSelecionada != 6);
     }
 }

@@ -1,4 +1,4 @@
-package controller;
+package menu;
 
 import service.delivery.MenuDeliveryService;
 import util.Util;
