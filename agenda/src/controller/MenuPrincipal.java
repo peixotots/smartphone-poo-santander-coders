@@ -1,7 +1,7 @@
 package controller;
 
 import util.Util;
-import view.MenuDelivery;
+import service.delivery.MenuDeliveryService;
 
 import java.util.List;
 
@@ -34,8 +34,8 @@ public class MenuPrincipal extends Menu {
                     break;
 
                 case 5:
-                    MenuDelivery menuDelivery = new MenuDelivery();
-                    menuDelivery.selecionaOpcao();
+                    MenuDeliveryService menuDeliveryService = new MenuDeliveryService();
+                    menuDeliveryService.selecionaOpcao();
                     break;
 
                 case 6:
