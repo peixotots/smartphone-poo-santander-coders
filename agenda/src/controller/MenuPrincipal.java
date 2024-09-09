@@ -27,7 +27,8 @@ public class MenuPrincipal extends Menu {
                     break;
 
                 case 3:
-                    // chamar o menu do calendário
+                    MenuEventos menuEventos = new MenuEventos();
+                    menuEventos.exibirMenu();
                     break;
 
                 case 4:
