@@ -6,8 +6,5 @@ public class Main {
 
         MenuPrincipal menuPrincipal = new MenuPrincipal();
         menuPrincipal.selecionaOpcao();
-
-        MenuBlocoDeNotas menuBlocoDeNotas = new MenuBlocoDeNotas();
-        menuBlocoDeNotas.selecionaOpcao();
     }
 }
