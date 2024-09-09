@@ -17,7 +17,6 @@ public class Contato {
     @Override
     public String toString() {
         return STR."""
-
                 ############################
                 ##### DADOS DO CONTATO #####
                 ############################
@@ -25,7 +24,8 @@ public class Contato {
                 Nome: \{nome} \{sobrenome}
                 Telefone: \{telefone}
                 E-mail: \{email}
-                """;
+
+               """;
     }
 
     public String getNome() {

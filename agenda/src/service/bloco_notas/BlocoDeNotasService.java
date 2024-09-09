@@ -2,16 +2,16 @@ package service.bloco_notas;
 
 import exception.NotaNaoEncontradaException;
 import exception.SenhaInvalidaException;
-import model.Notas;
+import model.Nota;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BlocoDeNotasService {
-    private List<Notas> notas = new ArrayList<Notas>();
-    private List<Notas> notasPrivadas = new ArrayList<Notas>();
+    private List<Nota> notas = new ArrayList<Nota>();
+    private List<Nota> notasPrivadas = new ArrayList<Nota>();
 
-    public void criarNota(Notas nota) {
+    public void criarNota(Nota nota) {
         try {
             notas.add(nota);
         } catch (Exception e) {
@@ -19,7 +19,7 @@ public class BlocoDeNotasService {
         }
     }
 
-    public void criarNotaPrivada(Notas notaPrivada) {
+    public void criarNotaPrivada(Nota notaPrivada) {
         try {
             notasPrivadas.add(notaPrivada);
         } catch (Exception e) {
@@ -32,7 +32,7 @@ public class BlocoDeNotasService {
             throw new SenhaInvalidaException("Nenhuma nota privada encontrada.");
         }
 
-        for (Notas nota : notasPrivadas) {
+        for (Nota nota : notasPrivadas) {
             if (senha.equals(nota.getSenha())) {
                 return true;
             }
@@ -77,11 +77,11 @@ public class BlocoDeNotasService {
         return notaEncontrada;
     }
 
-    public List<Notas> getNotas() {
+    public List<Nota> getNotas() {
         return notas;
     }
 
-    public List<Notas> getNotasPrivadas() {
+    public List<Nota> getNotasPrivadas() {
         return notasPrivadas;
     }
 }

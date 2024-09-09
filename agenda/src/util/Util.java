@@ -1,6 +1,6 @@
 package util;
 
-import model.Notas;
+import model.Nota;
 import service.bloco_notas.BlocoDeNotasService;
 
 import java.util.Scanner;
@@ -83,7 +83,7 @@ public class Util {
     }
 
     private static boolean tituloExiste(String titulo, BlocoDeNotasService blocoDeNotasService) {
-        for (Notas nota : blocoDeNotasService.getNotas()) {
+        for (Nota nota : blocoDeNotasService.getNotas()) {
             if (nota.getTitulo().equalsIgnoreCase(titulo)) {
                 return true;
             }

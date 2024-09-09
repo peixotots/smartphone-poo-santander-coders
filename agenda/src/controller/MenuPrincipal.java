@@ -32,9 +32,8 @@ public class MenuPrincipal extends Menu {
                     break;
 
                 case 4:
-                    MenuWeather menuWeather = new MenuWeather();
+                    MenuWheater menuWeather = new MenuWheater();
                     menuWeather.selecionaOpcao();
-                    break;
                     break;
 
                 case 5:

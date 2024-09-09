@@ -1,7 +1,7 @@
 package view;
 
 import exception.SenhaInvalidaException;
-import model.Notas;
+import model.Nota;
 import service.bloco_notas.BlocoDeNotasService;
 import util.Util;
 
@@ -16,7 +16,7 @@ public class BlocoDeNotas {
             String titulo = Util.validarTitulo(scanner, "Digite o título: ", blocoDeNotasService);
             String descricao = Util.validarDescricao(scanner, "Digite a descrição: ");
 
-            Notas novaNota = new Notas(titulo, descricao);
+            Nota novaNota = new Nota(titulo, descricao);
             blocoDeNotasService.criarNota(novaNota);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -32,7 +32,7 @@ public class BlocoDeNotas {
                 String titulo = Util.validarTitulo(scanner, "Digite o título: ", blocoDeNotasService);
                 String descricao = Util.validarDescricao(scanner, "Digite a descrição: ");
 
-                Notas novaNotaPrivada = new Notas(titulo, descricao, senha);
+                Nota novaNotaPrivada = new Nota(titulo, descricao, senha);
                 blocoDeNotasService.criarNotaPrivada(novaNotaPrivada);
 
                 String resposta = Util.ler(scanner, "Deseja criar outra nota privada? (s/n): ").toLowerCase();
@@ -121,7 +121,7 @@ public class BlocoDeNotas {
             listaDeNotas.append(linhaCentral).append("\n");
 
             for (int i = 0; i < blocoDeNotasService.getNotasPrivadas().size(); i++) {
-                Notas nota = blocoDeNotasService.getNotasPrivadas().get(i);
+                Nota nota = blocoDeNotasService.getNotasPrivadas().get(i);
 
                 String linhaTituloNota = "║  " + (i + 1) + ". " + nota.getTitulo() + " ".repeat(Math.max(0, largura - (nota.getTitulo().length() + 5))) + "║";
                 listaDeNotas.append(linhaTituloNota).append("\n");
@@ -157,7 +157,7 @@ public class BlocoDeNotas {
             listaDeNotas.append(linhaCentral).append("\n");
 
             for (int i = 0; i < blocoDeNotasService.getNotas().size(); i++) {
-                Notas nota = blocoDeNotasService.getNotas().get(i);
+                Nota nota = blocoDeNotasService.getNotas().get(i);
 
                 String linhaTituloNota = "║  " + (i + 1) + ". " + nota.getTitulo() + " ".repeat(Math.max(0, largura - (nota.getTitulo().length() + 5))) + "║";
                 listaDeNotas.append(linhaTituloNota).append("\n");

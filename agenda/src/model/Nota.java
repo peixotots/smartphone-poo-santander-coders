@@ -1,16 +1,16 @@
 package model;
 
-public class Notas {
+public class Nota {
     public String titulo;
     private String descricao;
     private String senha;
 
-    public Notas(String titulo, String descricao) {
+    public Nota(String titulo, String descricao) {
         this.titulo = titulo;
         this.descricao = descricao;
     }
 
-    public Notas(String titulo, String descricao, String senha) {
+    public Nota(String titulo, String descricao, String senha) {
         this.titulo = titulo;
         this.descricao = descricao;
         this.senha = senha;

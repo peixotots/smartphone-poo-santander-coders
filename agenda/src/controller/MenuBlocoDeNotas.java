@@ -72,6 +72,6 @@ public class MenuBlocoDeNotas extends Menu {
                     break;
             }
 
-        } while (opcaoSelecionada != 4);
+        } while (opcaoSelecionada != 7);
     }
 }
