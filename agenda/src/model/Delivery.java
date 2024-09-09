@@ -3,11 +3,11 @@
 
 package model;
 
-public class ItemService {
+public class Delivery {
     private final String nome;
     private final double preco;
 
-    public ItemService(String nome, double preco) {
+    public Delivery(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
     }
