@@ -1,3 +1,4 @@
+import controller.MenuBlocoDeNotas;
 import controller.MenuPrincipal;
 
 public class Main {
@@ -6,5 +7,7 @@ public class Main {
         MenuPrincipal menuPrincipal = new MenuPrincipal();
         menuPrincipal.selecionaOpcao();
 
+        MenuBlocoDeNotas menuBlocoDeNotas = new MenuBlocoDeNotas();
+        menuBlocoDeNotas.selecionaOpcao();
     }
 }
