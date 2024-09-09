@@ -31,7 +31,9 @@ public class MenuPrincipal extends Menu {
                     break;
 
                 case 4:
-                    // chamar o menu da previsão do tempo
+                    MenuWeather menuWeather = new MenuWeather();
+                    menuWeather.selecionaOpcao();
+                    break;
                     break;
 
                 case 5:
