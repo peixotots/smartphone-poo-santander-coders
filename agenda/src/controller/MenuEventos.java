@@ -14,7 +14,7 @@ public class MenuEventos extends Menu {
     private DateTimeFormatter formatter;
 
     public MenuEventos() {
-        super(); // Inicializa o Scanner da classe base Menu
+        super();
         agenda = new AgendaEventosService();
         formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     }
@@ -40,16 +40,16 @@ public class MenuEventos extends Menu {
                 System.out.print("Escolha uma opção: ");
                 try {
                     opcao = entrada.nextInt();
-                    entrada.nextLine();  // Limpa o buffer
+                    entrada.nextLine();
 
                     if (opcao < 1 || opcao > 4) {
                         System.out.println("Opção inválida. Por favor, escolha um número entre 1 e 4.");
                     } else {
-                        entradaValida = true; // Entrada é válida
+                        entradaValida = true;
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Entrada inválida. Por favor, digite um número.");
-                    entrada.nextLine(); // Limpa o buffer de entrada
+                    entrada.nextLine();
                 }
             }
 
