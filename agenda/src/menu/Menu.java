@@ -1,4 +1,4 @@
-package controller;
+package menu;
 
 import java.util.List;
 import java.util.Scanner;
@@ -34,6 +34,10 @@ public abstract class Menu {
     }
 
     public abstract void selecionaOpcao();
+
+    public void exibirMenu() {
+
+    }
 }
 
 

@@ -1,5 +1,6 @@
-package controller;
+package menu;
 
+import service.delivery.MenuDeliveryService;
 import util.Util;
 
 import java.util.List;
@@ -21,19 +22,23 @@ public class MenuPrincipal extends Menu {
                     break;
 
                 case 2:
-                    // chamar o menu do bloco de notas
+                    MenuBlocoDeNotas menuBlocoDeNotas = new MenuBlocoDeNotas();
+                    menuBlocoDeNotas.selecionaOpcao();
                     break;
 
                 case 3:
-                    // chamar o menu do calendário
+                    MenuEventos menuEventos = new MenuEventos();
+                    menuEventos.exibirMenu();
                     break;
 
                 case 4:
-                    // chamar o menu da previsão do tempo
+                    MenuWheater menuWeather = new MenuWheater();
+                    menuWeather.selecionaOpcao();
                     break;
 
                 case 5:
-                    // chamar o menu do delivery
+                    MenuDeliveryService menuDeliveryService = new MenuDeliveryService();
+                    menuDeliveryService.selecionaOpcao();
                     break;
 
                 case 6:
