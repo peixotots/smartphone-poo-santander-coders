@@ -1,15 +1,15 @@
 //Classe responsável por gerenciar o menu principal de delivery
 //Herda da classe Menu e implementa o metodo do 'selecionaOpcao' para exibir e processar as opções do menu de delivery
 
-package service.delivery;
+package menu;
 
-import menu.Menu;
-import model.ItemService;
+import model.Delivery;
+import service.delivery.SubmenuService;
 import util.Util;
 
 import java.util.List;
 
-public class MenuDeliveryService extends Menu {
+public class MenuDelivery extends Menu {
 
     @Override
     public void selecionaOpcao() {
@@ -22,33 +22,33 @@ public class MenuDeliveryService extends Menu {
             switch (opcaoSelecionada) {
                 case 1:
                     SubmenuService.exibirSubmenu("Pizzas", List.of(
-                            new ItemService("Moda da casa", 60.00),
-                            new ItemService("Frango com catupiry", 55.00),
-                            new ItemService("Marguerita", 50.00)
+                            new Delivery("Moda da casa", 60.00),
+                            new Delivery("Frango com catupiry", 55.00),
+                            new Delivery("Marguerita", 50.00)
                     ));
                     break;
 
                 case 2:
                     SubmenuService.exibirSubmenu("Hamburguer", List.of(
-                            new ItemService("Smash com fritas", 38.00),
-                            new ItemService("Frango com salada", 32.00),
-                            new ItemService("Vegetariano (burguer de soja)", 34.00)
+                            new Delivery("Smash com fritas", 38.00),
+                            new Delivery("Frango com salada", 32.00),
+                            new Delivery("Vegetariano (burguer de soja)", 34.00)
                     ));
                     break;
 
                 case 3:
                     SubmenuService.exibirSubmenu("Doces", List.of(
-                            new ItemService("Bolo de cenoura", 8.00),
-                            new ItemService("Pão de mel", 6.00),
-                            new ItemService("Donuts de chocolate", 12.00)
+                            new Delivery("Bolo de cenoura", 8.00),
+                            new Delivery("Pão de mel", 6.00),
+                            new Delivery("Donuts de chocolate", 12.00)
                     ));
                     break;
 
                 case 4:
                     SubmenuService.exibirSubmenu("Bebidas", List.of(
-                            new ItemService("Coca-Cola", 5.00),
-                            new ItemService("Suco de Laranja", 7.00),
-                            new ItemService("Água Mineral", 3.00)
+                            new Delivery("Coca-Cola", 5.00),
+                            new Delivery("Suco de Laranja", 7.00),
+                            new Delivery("Água Mineral", 3.00)
                     ));
                     break;
 

@@ -1,4 +1,4 @@
-package service.agenda_contatos;
+package service.agenda_eventos;
 import model.Evento;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
