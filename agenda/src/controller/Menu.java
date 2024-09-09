@@ -34,6 +34,10 @@ public abstract class Menu {
     }
 
     public abstract void selecionaOpcao();
+
+    public void exibirMenu() {
+
+    }
 }
 
 
